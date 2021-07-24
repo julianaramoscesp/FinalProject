@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title> University of Notre Dame Dorms </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<br> <br>
+			<h1>Dorms at the University of Notre Dame</h1>
+			<h3>(jramos3)</h3>
+            <p>Dorm life is a big part of Notre Dame culture. Through this website ... </p>
+            <p>+ Learn about the iconic Notre Dame dorms</p>
+            <p>+ Retrieve dorm information from an api that can update changes</p>
+            <p>+ Get into the Notre Dame spirit!</p>
+			<br>
+
+			<img id="photo" src="notredame.jpeg"/>
+            
+            <br><br>
+			<p>Instructions:</p>
+			<p>- Display all dorms, female dorms, and male dorms through the blue buttons. Click clear to remove the dorms out of sight.</p>
+            <p>- Input a Notre Dame dorm then click "submit"</p>
+            <p>- If the dorm name is valid, you may click the white buttons below</p>
+            <p>- If the dorm is not valid, the site will tell you the the dorm is not valid. You may try again by inputing another dorm!</p>
+			<br>
+			
+            <div>
+                <button class="btn btn-primary" id="display_all_dorms">All Dorms</button>
+				<button class="btn btn-primary" id="female_dorms">Female Dorms</button>
+				<button class="btn btn-primary" id="male_dorms">Male Dorms</button>
+                <button class="btn btn-default" id="clear">Clear</button>
+            </div>
+            <br>
+			<div id="dorm-names">  </div>
+			<br>
+
+			<form class="bsr-form" action="">
+				<div class="form-group">
+					<label for="text-input">Input the dorm you want to learn about:</label>
+					<input name="text-input" type="text" class="form-control" id="name" placeholder="Ex. Alumni">
+					<br>
+					<button class="btn btn-primary" href="#" type="button" id="dorm">Submit</button>
+				</div>
+			</form>
+			<button class="btn btn-default" id="year">Year</button>
+			<button class="btn btn-default" id="gender">Gender</button>
+			<button class="btn btn-default" id="quad">Quad</button>
+			<button class="btn btn-default" id="mascot">Mascot</button>
+            <button class="btn btn-default" id="all_info">Display All</button>
+            <br></br>
+            <label id="response"> </label>
+		</div>
+
+		<div class="container">
+			<br>
+			<label id="response"> </label>
+		</div>
+
+	</body>
+	<script src="main.js"> </script>
+
+</html>
